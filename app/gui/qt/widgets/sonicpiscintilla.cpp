@@ -43,8 +43,8 @@ SonicPiScintilla::SonicPiScintilla(SonicPiLexer *lexer, SonicPiTheme *theme, QSt
   int SPi_CTRL = Qt::META;
   int SPi_META = Qt::CTRL;
 #else
-  int SPi_CTRL = Qt::CTRL;
-  int SPi_META = Qt::ALT;
+  int SPi_CTRL = Qt::ALT;
+  int SPi_META = Qt::CTRL;
 #endif
 
   // basic navigation
