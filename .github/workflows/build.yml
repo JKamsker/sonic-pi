@@ -166,5 +166,5 @@ jobs:
     - uses: actions/upload-artifact@v2
       name: publish artifact
       with:
-        name: my-artifact
+        name: "${{matrix.build_type}} - ${{matrix.os}}"
         path: ${{github.workspace}}/app/build/
