@@ -163,4 +163,8 @@ jobs:
       run: rake test 
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'
 
-
+    - uses: actions/upload-artifact@v2
+      name: publish artifact
+      with:
+        name: my-artifact
+        path: ${{github.workspace}}/app/build/
